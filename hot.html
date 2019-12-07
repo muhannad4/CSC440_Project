@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Shopping cart JS</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <link type="text/css" rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap" rel="stylesheet">
+    <link rel=stylesheet href="sweetalert/sweetalert.css" >
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="sweetalert/sweetalert.js"></script>
+    <script src="jquery.js"></script>
+
+
+</head>
+<body>
+    <div id = "header"></div>
+
+
+<!-- Main -->
+
+        <table class="" style="margin: auto;" cellpadding="50px">
+
+      <tbody>
+        <tr>
+          <td><img class="item1 add-to-cart" src="img/coffee.png" alt="coffee image">
+         
+            <h4 style="text-align: center;">Black coffee</h4>
+            <p style="text-align: center;">Price: 8 SR</p>
+            <a href="#" data-name="BlackCoffee" data-price="8" class="add-to-cart btn btn-primary" style="margin-left: 24px;">Add to cart</a></td>
+          <td>
+           
+      <img class="item1" src="img/cappuccino.png" alt="Cappuccino image">
+        <h4 style="text-align: center;">Cappuccino</h4>
+        <p style="text-align: center;">Price: 10 SR</p>
+        <a href="#" data-name="Cappuccino" data-price="10" class="add-to-cart btn btn-primary" style="margin-left: 25px;">Add to cart</a>
+      
+          <td><img class="item1" src="img/latte.png" alt="latte image">
+    <h4 style="text-align: center; margin-top: 5px;">Latte</h4>
+    <p style="text-align: center; margin-top: 5px;">Price: 12 SR</p>
+    <a href="#" data-name="Latte" data-price="12" class="add-to-cart btn btn-primary" style="margin-left: 20px;">Add to cart</a>
+  </td>
+        <tr>
+          <td> 
+              <img class="item1" src="img/tea.png" alt="Tea image">
+    <h4 style="text-align: center;">Tea</h4>
+    <p style="text-align: center;">Price:6 SR</p>
+    <a href="#" data-name="Tea" data-price="6" class="add-to-cart btn btn-primary" style="margin-left: 24px;">Add to cart</a>
+      </td>
+          <td>
+              <img class="item1" src="img/Esspresso.png" alt="Esspresso image">
+    <h4 style="text-align: center;">Esspresso</h4>
+    <p style="text-align: center;">Price: 7 SR</p>
+    <a href="#" data-name="Esspresso" data-price="7" class="add-to-cart btn btn-primary" style="margin-left: 24px;">Add to cart</a></td>
+            
+          <td> <img class="item1" src="img/chocolate.png" alt="Hot chocolate image">
+    <h4 style="text-align: center;">Hot chocolate</h4>
+    <p style="text-align: center;" >Price: 13 SR</p>
+    <a href="#" data-name="HotChocolate" data-price="13" class="add-to-cart btn btn-primary" style="margin-left: 24px;">Add to cart</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+<br><br><br>
+  <!--first row done  -->
+
+ <!-- Modal -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="show-cart table">
+
+        </table>
+        <div>Total price: SR<span class="total-cart"></span></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button class="clear-cart btn btn-primary">Place Order</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+body{
+  margin: 0;
+  background-image: linear-gradient(to bottom,Peru,white);
+  background-repeat: no-repeat;
+  font-family: 'Merriweather', serif;
+}
+.container{
+  width: 160px;
+  height: 150px;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 155px;
+  text-align:left;
+
+}
+.toolbar {
+  list-style-type: none;
+  margin-top:50px;
+  padding:0;
+  overflow: hidden;
+  background-color: #000;
+
+}
+.logo{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+}
+li {
+  float: left;
+  padding-left:30px;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+h2{
+  font-family: 'Montserrat', sans-serif;
+}

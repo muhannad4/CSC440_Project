@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+
+    <title>Contact Us</title>
+	<link type="text/css" rel="stylesheet" href="style.css">
+    <link rel=stylesheet href="sweetalert/sweetalert.css" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <link type="text/css" rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap" rel="stylesheet">
+    <link rel=stylesheet href="sweetalert/sweetalert.css" >
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="sweetalert/sweetalert.js"></script>
+ <script src="jquery.js"></script>
+    </head>
+<body>
+
+    <div id="header"></div>
+    <br>
+    <h2 style="text-align: center">Contact Us Detalis</h2>
+    <p style="text-align: center">This is our contact page which contains our information<br>
+    phone N.O: 92000000<br>
+    </p>
+    <p style="text-align: center;">Please fill out the form below and we will contact you shortly</p>
+<form style="margin:0 40%;" action="mailto:436106625@student.ksu.edu.sa" method="post" enctype="text/plain">
+    <label>Your Name:</label>
+    <input type="text" name="yourName" value="" maxlength="50"><br>
+    <lable>Your Email:</lable>
+    <input type="email" name="yourEmail" value="">
+            <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com"><br>
+    <labe>Your Massege:</labe><br><br>
+    <textarea name="yourMessage" rows="10" cols="40" maxlength="500"></textarea><br>
+        <input class="btn btn-outline-dark" style="margin-left:95%;" type="submit" name="">
+
+    </form>
+    
+<!-- Modal -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="show-cart table">
+          
+        </table>
+        <div>Total price: SR<span class="total-cart"></span></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button class="clear-cart btn btn-primary">Place Order</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+   
+
+
+
+
+</html>
